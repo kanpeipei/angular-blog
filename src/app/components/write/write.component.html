@@ -1,0 +1,10 @@
+<p>write works!</p>
+<div class="blog-title">
+    <input type="text" #blogTitle>
+</div>
+<div class="blog-text">
+    <input type="text #blogText">
+</div>
+<div class="blog-submit">
+    <button (click)="add(blogTitle.value, blogText.value)" >save</button>
+</div>

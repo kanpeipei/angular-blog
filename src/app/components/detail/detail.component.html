@@ -1,0 +1,9 @@
+<h1>Detail</h1>
+<div *ngIf="blog">
+    <h2>{{blog.title}}</h2>
+    <p>{{blog.text}}</p>
+    <span>{{blog.created_at}}</span>
+</div>
+<button [routerLink]="['']" routerLinkActive="router-link-active" >
+    戻る
+</button>
