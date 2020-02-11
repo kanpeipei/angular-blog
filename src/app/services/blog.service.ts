@@ -11,7 +11,8 @@ import { Observable } from 'rxjs';
 )
 export class BlogService {
   blog: Blog[] = [];
-  private Url = 'http://localhost:8000/api/blog/';
+  // private Url = 'http://localhost:8000/api/blog/';
+  private Url = 'https://drf-blog.herokuapp.com/api/blog/';
   private headers = new HttpHeaders({
     'Content-Type': 'application/json'
   });
