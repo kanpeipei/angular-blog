@@ -6,6 +6,7 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 export class DropdownDirective {
 
   constructor(private el: ElementRef) {
+    this.el.nativeElement.style.boxShadow = '10px 5px 20px 0px';
   }
 
   @HostListener('mouseenter') onMouserEnter(){
