@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    padding: 0px 100px;
+    background-color: white;
+    font-family: Lato,sans-serif,游ゴシック体,YuGothic,游ゴシック Medium,Yu Gothic Medium;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a{
+    text-decoration: none;
+    color: black;
+}

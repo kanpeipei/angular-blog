@@ -10,18 +10,29 @@ import { WriteComponent } from './components/write/write.component';
 import { BlogService } from './services/blog.service';
 import { DetailComponent } from './components/detail/detail.component';
 
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+import { DropdownDirective } from './directives/dropdown.directive';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     WriteComponent,
-    DetailComponent
+    DetailComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule,
+    BrowserAnimationsModule,
+    MatCardModule,
   ],
   providers: [BlogService],
   bootstrap: [AppComponent]
