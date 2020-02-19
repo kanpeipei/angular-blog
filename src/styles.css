@@ -10,3 +10,6 @@ a{
     text-decoration: none;
     color: black;
 }
+.main-container h1{
+    padding-left: 100px;
+}

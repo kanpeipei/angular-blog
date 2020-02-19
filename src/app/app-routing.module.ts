@@ -6,9 +6,9 @@ import { DetailComponent } from './components/detail/detail.component';
 
 
 const routes: Routes = [
-  {path: '', component: ListComponent},
+  {path: '', component: ListComponent, data: {animation: 'ListPage'}},
   {path: 'write', component: WriteComponent},
-  {path: 'detail/:id', component: DetailComponent},
+  {path: 'detail/:id', component: DetailComponent, data: {animation: 'DetailPage'}},
 ];
 
 @NgModule({

@@ -1,10 +1,12 @@
-<div class="container">
 <h1>List</h1>
-        <div *ngFor="let blog of blogs" class="">
+<div *ngIf="blogs" class="blog-list">
+    <div [@popUpAnimations]="blogs.length">
+        <div *ngFor="let blog of blogs" class="blog-cards">
             <a routerLink="detail/{{blog.id}}">
                 <mat-card appDropdown>
-                    <mat-card-title>{{blog.title}}</mat-card-title>
+                    <mat-card-title >{{blog.title}}</mat-card-title>
                 </mat-card>
             </a>
-        </div>
+        </div>    
+    </div>
 </div>

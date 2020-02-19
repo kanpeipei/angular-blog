@@ -14,6 +14,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { DropdownDirective } from './directives/dropdown.directive';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 
@@ -33,6 +35,7 @@ import { DropdownDirective } from './directives/dropdown.directive';
     MatToolbarModule,
     BrowserAnimationsModule,
     MatCardModule,
+    MatIconModule,
   ],
   providers: [BlogService],
   bootstrap: [AppComponent]

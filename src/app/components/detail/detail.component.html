@@ -1,8 +1,10 @@
-<h1>Detail</h1>
-<div *ngIf="blog">
-    <h2>{{blog.title}}</h2>
-    <p>{{blog.text}}</p>
+<a [routerLink]="['']" routerLinkActive="router-link-active" >
+    <mat-icon>keyboard_backspace</mat-icon>
+</a>
+<div @enterAnimation *ngIf="blog">
+    <h1>Detail</h1>
+    <div >
+        <h2>{{blog.title}}</h2>
+        <p>{{blog.text}}</p>
+    </div>
 </div>
-<button [routerLink]="['']" routerLinkActive="router-link-active" >
-    戻る
-</button>

@@ -1,6 +1,8 @@
 <mat-toolbar>
     <a href=""><h1>BLOG</h1></a>
 </mat-toolbar>
-<div class="container">
-    <router-outlet></router-outlet>
+<div class="main-container">
+    <div>
+        <router-outlet #outlet="outlet"></router-outlet>
+    </div>
 </div>
